@@ -2415,7 +2415,7 @@ localStorage.setItem('mapIDS','');
         t.ExpressionOperators = t.FunctionNames = t.ActionTypes = t.EventTypes = void 0,
         t.EventTypes = ["click", "input", "timer", "place", "remove"],
         t.ActionTypes = ["stateChange", "displayChange", "itemChange", "displayTimer", "setTimer", "adjustInventory", "addAchievement", "eventTrigger", "entityTrigger", "itemTrigger", "iteratePlayers", "spawn", "return", "spawnmap", "clientCommand", "adjustSkill", "adjustCoins", "adjustEnergy", "adjustPet", "craft", "collect", "craftCancel", "destroy", "mapDrop", "mailDrop", "scheduleNotice", "setTracker", "incTracker", "decTracker", "insertArray", "loadData", "move", "custom", "call", "broadcast", "globalMessage", "track", "metric", "boost", "transient"],
-        t.FunctionNames = ["time", "rand", "normal", "floor", "ceil", "max", "min", "abs", "log", "round", "evalTracker", "string", "array", "inventory", "space", "environment", "trait", "achievement", "crafttime", "permission", "membership", "tag", "state", "energy", "coins", "quest", "roomfind", "eval", "pet"],
+        t.FunctionNames = ["time", "rand", "normal", "floor", "ceil", "max", "min", "abs", "log", "round", "evaltracker", "string", "array", "inventory", "space", "environment", "trait", "achievement", "crafttime", "permission", "membership", "tag", "state", "energy", "coins", "quest", "roomfind", "eval", "pet"],
         t.ExpressionOperators = ["or", "<", ">", "=", "<>", ">=", "<=", "and", "+", "*", "-", "/", "not", "mod"]
     },
     5341: function(e, t) {
@@ -13475,130 +13475,134 @@ localStorage.setItem('mapIDS','');
         "use strict";
         n.d(t, {
             A$: function() {
-                return g
+                return m
             },
             BA: function() {
-                return E
+                return _
             },
             B_: function() {
-                return f
+                return h
             },
             D9: function() {
-                return v
+                return y
             },
             DY: function() {
-                return d
+                return f
             },
             Kp: function() {
-                return O
+                return A
             },
             LI: function() {
-                return l
+                return u
             },
             Oe: function() {
-                return I
+                return T
             },
             Qc: function() {
-                return b
+                return E
             },
             UM: function() {
-                return s
+                return l
             },
             WS: function() {
-                return _
+                return w
             },
             WX: function() {
                 return r
             },
             XX: function() {
-                return y
+                return b
             },
             Y: function() {
-                return A
+                return S
             },
             Z6: function() {
-                return P
-            },
-            aU: function() {
-                return c
-            },
-            fX: function() {
                 return R
             },
+            aU: function() {
+                return d
+            },
+            dW: function() {
+                return s
+            },
+            fX: function() {
+                return I
+            },
             fd: function() {
-                return k
+                return C
             },
             ft: function() {
                 return a
             },
             je: function() {
-                return x
+                return k
             },
             ji: function() {
-                return h
+                return p
             },
             m6: function() {
-                return w
+                return O
             },
             p$: function() {
-                return S
+                return P
             },
             pZ: function() {
-                return T
+                return x
             },
             qO: function() {
                 return o
             },
             rq: function() {
-                return p
+                return g
             },
             sD: function() {
-                return m
+                return v
             },
             sV: function() {
                 return i
             },
             uT: function() {
-                return u
+                return c
             }
         });
-        let r = parseFloat("9.283")
+        let r = parseFloat("10.2081")
           , i = 1676498533e3
           , o = "game-container"
           , a = "players"
           , s = "players_v2"
-          , l = 144
-          , u = 188
-          , c = 1
-          , d = 2
-          , f = 3e3
-          , h = 1250
-          , p = 2e3
-          , g = 1
-          , m = 30
-          , v = 32
-          , y = 21
-          , b = 120
-          , E = {
+          , l = s
+          , u = 144
+          , c = 188
+          , d = 1
+          , f = 2
+          , h = 3e3
+          , p = 1250
+          , g = 2e3
+          , m = 1
+          , v = 30
+          , y = 32
+          , b = 21
+          , E = 120
+          , _ = {
             top: 0,
             left: 0,
             right: 6e3,
             bottom: 6e3
         }
-          , _ = {
-            width: E.right - E.left,
-            height: E.bottom - E.top
+          , w = {
+            width: _.right - _.left,
+            height: _.bottom - _.top
         }
-          , w = 2
-          , O = .05
-          , A = 100
-          , S = .4
-          , P = 2
-          , R = .03
-          , I = ["https://pixels.xyz", "https://pixels.online", "https://help.pixels.xyz"]
-          , T = "https://d31ss916pli4td.cloudfront.net"
-          , x = "https://mesh-online-assets.s3.us-east-2.amazonaws.com"
-          , k = "".concat(T, "/game/ui/skills/skills_icon_")
+          , O = 2
+          , A = .05
+          , S = 100
+          , P = .4
+          , R = 2
+          , I = .03
+          , T = ["https://pixels.xyz", "https://pixels.online", "https://help.pixels.xyz"]
+          , x = "https://d31ss916pli4td.cloudfront.net"
+          , k = "https://mesh-online-assets.s3.us-east-2.amazonaws.com"
+          , C = "".concat(x, "/game/ui/skills/skills_icon_")
     },
     80919: function(e, t, n) {
         "use strict";
@@ -13865,6 +13869,9 @@ localStorage.setItem('mapIDS','');
     83742: function(e, t, n) {
         "use strict";
         n.d(t, {
+            $$: function() {
+                return p
+            },
             F_: function() {
                 return h
             },
@@ -14012,6 +14019,52 @@ localStorage.setItem('mapIDS','');
                 r.PM)(null == t ? void 0 : t.slots, e=>e.item === i && e.quantity > 0)
             }
             ) : []
+        }
+        function p(e, t) {
+            if (e.id !== o.dW)
+                return e;
+            let n = Object.keys(e.pieces).map(n=>({
+                attribute: n,
+                cosmetics: h({
+                    avatarId: e.id,
+                    attribute: n
+                }, t)
+            })).map(t=>{
+                var n, r;
+                let {attribute: i, cosmetics: o} = t
+                  , a = null === (n = e.pieces[i]) || void 0 === n ? void 0 : n[i];
+                if (!a || o.find(e=>e.value === a))
+                    return;
+                let s = d({
+                    avatarId: e.id,
+                    attribute: i
+                });
+                if (null == s ? void 0 : s.irremovable) {
+                    let e = null === (r = o.at(Math.floor(Math.random() * o.length))) || void 0 === r ? void 0 : r.value;
+                    if (e)
+                        return {
+                            attribute: i,
+                            value: e
+                        }
+                }
+                return {
+                    attribute: i
+                }
+            }
+            ).filter(e=>!!e);
+            return n.length ? {
+                id: e.id,
+                pieces: n.reduce((e,t)=>{
+                    let {attribute: n, value: r} = t;
+                    return r ? e[n] = {
+                        [n]: r
+                    } : delete e[n],
+                    e
+                }
+                , {
+                    ...e.pieces
+                })
+            } : e
         }
     },
     96808: function(e, t, n) {
@@ -15220,29 +15273,14 @@ localStorage.setItem('mapIDS','');
             }
             async fetchingUgcDecorations(e) {
                 let {onlyFetchPending: t} = e
-                  , {data: n} = await this.axiosget("".concat(this.baseAPIURL, "/game/ugc/decorations?").concat(t ? "onlyFetchPending=true" : ""));
-                return n
-            }
-            async approveUgcDecoration(e) {
-                let {itemId: t, objectId: n} = e
-                  , {data: i} = await r.Z.post("".concat(this.baseAPIURL, "/game/ugc/decorations/approve"), {
-                    authToken: (0,
-                    a.Ul)("pixels-session"),
-                    itemId: t,
-                    objectId: n
+                  , n = (0,
+                o.F5)()
+                  , {data: r} = await this.axiosget("".concat(this.baseAPIURL, "/game/ugc/decorations?tenant=").concat(n, "&").concat(t ? "onlyFetchPending=true" : ""), {
+                    headers: {
+                        Authorization: this.sessionToken
+                    }
                 });
-                return i
-            }
-            async rejectUgcDecoration(e) {
-                let {itemId: t, objectId: n, reason: i} = e
-                  , {data: o} = await r.Z.post("".concat(this.baseAPIURL, "/game/ugc/decorations/reject"), {
-                    authToken: (0,
-                    a.Ul)("pixels-session"),
-                    itemId: t,
-                    objectId: n,
-                    reason: i
-                });
-                return o
+                return r
             }
             async axiosget(e, t) {
                 let n = Date.now()
@@ -16596,21 +16634,6 @@ localStorage.setItem('mapIDS','');
                     objects: n.objects
                 })),
                 n
-            }
-            async approveUgcDecoration(e) {
-                let {itemId: t, objectId: n} = e;
-                return await this.api.approveUgcDecoration({
-                    itemId: t,
-                    objectId: n
-                })
-            }
-            async rejectUgcDecoration(e) {
-                let {itemId: t, objectId: n, reason: r} = e;
-                return await this.api.rejectUgcDecoration({
-                    itemId: t,
-                    objectId: n,
-                    reason: r
-                })
             }
             getDefaultCurrency() {
                 var e;
@@ -18896,23 +18919,25 @@ localStorage.setItem('mapIDS','');
         "use strict";
         n.d(t, {
             D2: function() {
-                return i
+                return a
             },
             IT: function() {
-                return l
+                return c
             },
             NN: function() {
-                return s
+                return u
             },
             WU: function() {
-                return o
+                return s
             },
             fD: function() {
-                return a
+                return l
             }
         });
-        let r = (0,
-        n(66741).oM)({
+        var r = n(66741)
+          , i = n(73913);
+        let o = (0,
+        r.oM)({
             name: "generalStoreModal",
             initialState: {
                 isOpen: !1,
@@ -18945,14 +18970,14 @@ localStorage.setItem('mapIDS','');
                 e.addCase("game/STORE_UPDATED", (e,t)=>{
                     let n = t.payload;
                     n.storeId === e.storeId && (e.loaded = !0,
-                    e.reset = n.resetTime)
+                    e.nextResetTimestamp = n.resetTime && n.resetTime + i.l.getInstance().serverTimeDelta)
                 }
                 )
             }
         })
-          , i = e=>e.generalStore
-          , {openStoreModal: o, closeStoreModal: a, buyStoreItem: s, sellStoreItem: l} = r.actions;
-        t.ZP = r.reducer
+          , a = e=>e.generalStore
+          , {openStoreModal: s, closeStoreModal: l, buyStoreItem: u, sellStoreItem: c} = o.actions;
+        t.ZP = o.reducer
     },
     67446: function(e, t, n) {
         "use strict";
